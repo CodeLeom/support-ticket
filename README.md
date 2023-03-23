@@ -3,4 +3,4 @@
 ## Features
 
 ### Tools
-> React, Express, MongoDB, Nodejs, Bcryptjs
+> React, Express, MongoDB, Nodejs, Bcryptjs, JWT
