@@ -38,6 +38,7 @@ function Ticket() {
                 Ticket ID: {ticket._id}
                 <span className={`status status-${ticket.status}`}>{ticket.status}</span>
             </h2>
+            <h2>Product/Issue: {ticket.product}</h2>
             <h3>Date Submitted: {new Date(ticket.createdAt).toLocaleString('en-US')}</h3>
             <hr />
             <div className="ticket-desc">
