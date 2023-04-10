@@ -5,7 +5,7 @@ import { FaPlus } from 'react-icons/fa'
 import {useSelector, useDispatch} from 'react-redux'
 import { useParams, useNavigate } from 'react-router-dom'
 import {getTicket, closeTicket} from '../features/tickets/ticketSlice'
-import {getNotes, reset as noteReset} from '../features/notes/noteSlice'
+import {getNotes, createNote, reset as noteReset} from '../features/notes/noteSlice'
 import BackButton from '../components/BackButton'
 import Spinner from '../components/Spinner'
 import NoteItem from '../components/NoteItem'
@@ -56,7 +56,7 @@ function Ticket() {
     // create note submit function
     const onNoteSubmit = (e) => {
         e.preventDefault()
-        console.log('Submit')
+        dispatch(createNote({noteText, ticketId}))
         closeModal()
     }
 
