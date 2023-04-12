@@ -25,7 +25,7 @@ app.use('/api/tickets', require('./routes/ticketRoutes'))
 if(process.env.NODE_ENV === 'production'){
     // set build folder as static
     // app.use(express.static(path.join(__dirname, 'frontend', 'build')))
-    const buildFile = path.join(__dirname, './', 'frontend', 'build')
+    const buildFile = path.join(__dirname, '../', 'frontend', 'build')
     app.use(express.static(buildFile))
     
     app.get('*', (req, res) => res.sendFile(path.join(buildFile, 'index.html')))
