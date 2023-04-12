@@ -1,7 +1,7 @@
 {
   "name": "frontend",
   "version": "0.1.0",
-  "proxy": "http://localhost:3500",
+  "proxy": "https://support-ticket-frontend.onrender.com/",
   "private": true,
   "dependencies": {
     "@reduxjs/toolkit": "^1.9.3",
